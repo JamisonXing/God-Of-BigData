@@ -90,7 +90,7 @@ HDFS 的 ` 文件系统命名空间 ` 的层次结构与大多数文件系统类
 
 #### 3.元数据的磁盘故障
 
-`FsImage` 和 `EditLog` 是 HDFS 的核心数据，这些数据的意外丢失可能会导致整个 HDFS 服务不可用。为了避免这个问题，可以配置 NameNode 使其支持 `FsImage` 和 `EditLog` 多副本同步，这样 `FsImage` 或 `EditLog` 的任何改变都会引起每个副本 `FsImage` 和 `EditLog` 的同步更新。
+`FsImage` 和 `EditLog` 是 HDFS 的核心数据，这些数据的意外丢失可能会导致整个 HDFS 服务不可用。为了避免这个问题，可以配置 NameNode 使其支持 `FsImage` 和 `EditLog` 多副本同步，这样 `FsImage` 或 `EditLog` 的任何改变都会引起每个副本 `FsImage` 和 `EditLog` 的同步更新。[HDFS中Fsimage与Edits详解](https://blog.csdn.net/weixin_53543905/article/details/130430928)
 
 #### 4.支持快照
 
